@@ -1,0 +1,378 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Sansita+Swashed:wght@400&display=swap" rel="stylesheet"> 
+	<title>Special Cakes for All Occasions</title>
+	<style>
+		section { display: block; }
+		.font-sw { font-family: "Sansita Swashed"; }
+		.font-bl { font-family: "Barlow"; }
+		.display-6 { font-size: 1.7em; }
+		#topnav nav {
+			position: fixed;
+			top:0;
+			z-index:100;
+			padding: 4px;
+			border-radius: 0px 0px 5px 5px;
+			font-size: 1.3em;
+		}
+		#header {
+			background-color: #E94D40;
+			color: white;
+		}
+		#header h1, #header h2, #header h3{  box-sizing: border-box; width: 100%;}
+		#header h3 { font-family: 'Barlow', sans-serif; color: rgb(251, 190, 54); display: inline-block; position: relative; }
+		#header h2 { font-family: 'Sansita Swashed'; }
+		#header h1 {  font-weight: 100; font-size: 6em }
+		#header .btn-order-online {
+			background-color: rgb(251, 190, 54);
+			border: 0px;
+			border-radius: 100px;
+			padding: 20px;
+			font-size: 1.3em;
+			display: block;
+			margin-top: 30px;
+			color:black;
+		}
+		#blurb {
+			color: white;
+			background-image: url('images/banner1200dark.jpg');
+			background-position: center bottom;
+			background-size: cover;
+		}
+		#address {
+			font-size: 1.75em !important;
+			font-weight: lighter;
+			color:white;
+			background: #0e0e0e;
+		}
+		#address p { margin: 5px; }
+		#address .contact-btn {
+			background-color: rgb(251, 190, 54);
+			border: 0px;
+			border-radius: 100px;
+			font-size: 0.8em;
+			padding: 2px 2px;
+			color:black;
+			text-align: center;
+			display: block;
+		}
+		#address .contact-btn.email {
+			font-size: 0.7em;
+			height: 40px;
+		}
+		#cakes .card-title {
+			font-family: "Sansita Swashed";
+		}		
+		#pricing {
+			background-color: #E94D40;
+			color: white;
+		}		
+		#pricing table {
+			font-size: 1.7em;
+			text-align: center;
+		}		
+		#about {
+			background-image: url('images/ap-flour-banner.jpg');
+			background-position: center;
+			background-size: cover;
+			color:white;
+		}
+		#contact {
+			background: #111;
+			color: white;
+		}
+		#footer {
+			background: #111;
+			color: #aaa;
+		}
+	</style>
+  </head>
+  <body>
+	<a id="a_header"></a>
+	<section id="topnav">
+		<div id="topnav-container" class="container d-flex justify-content-end">			
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark font-sw d-flex justify-content-end">				
+				<button class="navbar-toggler m-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>	
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item m-1 text-center">
+						<a class="nav-link" href="#a_header">Home</a>
+					  </li>
+					  <li class="nav-item m-1 text-center">
+						<a class="nav-link" href="#a_cakes">Cakes</a>
+					  </li>
+					  <li class="nav-item m-1 text-center">
+						<a class="nav-link" href="#a_about">About</a>
+					  </li>
+					</ul>
+				</div>			
+			</nav>
+		</div>
+	</section>
+	<section id="header">		
+		<div class="container">
+			<div class="row">
+				<div class="p-5 col-lg-6">					
+					<h3 >WELCOME TO</h3>
+					<h1 class="display-1">Special Cakes</h1>
+					<h2 class="display-4">for all occasions</h2>
+					<button type="button" class="btn btn-primary btn-order-online font-bl mt-5">
+<svg width="1.6em" height="1.6em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="vertical-align: center;">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg>					
+					ORDER ONLINE
+					</button>
+				</div>
+				<div class="p-5 col-lg-6">
+					<img src="images/cake-banner.jpg" class="img-fluid mt-5">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="address">
+		<div class="container ">
+			<div class="row">
+				<div class="col-lg-6 p-5">
+					<h2 class="font-sw">Come and visit us</h2>
+					<hr/>
+					<div class="container">
+						<div class="row">
+							<div class="23 Pacific Hwy, Sydney NSW">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3">Phone:</div>
+							<div class="col-sm-9"><a class="btn btn-primary contact-btn telno" href="tel:89651234">8965 1234</a></div>
+						</div>
+						<div class="row mt-2">
+							<div class="col-sm-3">Email:</div>
+							<div class="col-sm-9"><a class="btn btn-primary contact-btn email" href="mailto:specialcakes@email.com">specialcakes@email.com</a></div>
+						</div>						
+					</div>
+				</div>
+				<div class="col-lg-6 p-5">
+					<h2 class="font-sw">Bakery hours</h2>
+					<hr/>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">Monday-Friday:</div>
+							<div class="col-sm-6"><strong>8.30 am</strong> to <strong>3:00 pm</strong></div>
+						</div>
+						<div class="row mt-2">
+							<div class="col-sm-6">Saturday and Sunday:</div>
+							<div class="col-sm-6"><strong>8.30 am</strong> to <strong>1:00 pm</strong></div>
+						</div>						
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="blurb">
+		<div class="container p-5" >
+			<h1 class="display-5 text-center font-sw">We have the cakes for all your special events</h1>
+			<hr class="my-4">
+			<p class="lead text-center">Special Cakes for All Occasions is your answer to all your cake needs,<br> serving a wide variety of sweets perfect for an office treat, birthday and other celebrations.</p>		
+		</div>
+	</section>	
+	<section id="cakes">
+		<a id="a_cakes"></a>
+		<div class="container mt-5 ">
+			<div class="row">
+				<h1 class="display-2 font-sw text-center mb-5">Our Cakes</h1>
+			</div>
+			<div class="row g-5">
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/brownie300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Brownies</h5>
+							<p class="card-text">Try some of our special brownies!</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/chocolateCake300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Chocolate Cake</h5>
+							<p class="card-text">Rich dark chocolate topped with candied oranges</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/cheeseCake300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Cheese Cake</h5>
+							<p class="card-text">Creamy, silky, smooth, delightful.</p>
+							
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-5 mt-2 mb-5">
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/cupcake300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Cupcakes </h5>
+							<p class="card-text">Awesomeness in a cup-sized package</p>
+						</div>
+					</div>				
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/decoratedCake300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Decorated cakes </h5>
+							<p class="card-text">When you absolutely have to impress.</p>
+						</div>
+					</div>				
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img class="card-img-top" src="images/small/macaron300.jpg" alt="Brownie">
+						<div class="card-body">
+							<h5 class="card-title">Macarons  </h5>
+							<p class="card-text">Awesomeness in a bite-sized package</p>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="pricing" class="mt-3">
+		<div class="container py-5">
+			<div class="row mx-md-5">
+				<div class="col-sm-12 ">
+					<h1 class="display-2 text-center font-sw">Prices</h1>
+					<hr/>
+					<table class="table text-white ">
+						<thead>
+							<tr  class="font-sw">
+								<td>Cake size</td>
+								<td>Suitable for</td>
+								<td>Price</td>						
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Small</td>
+								<td>8-10 people</td>
+								<td><strong>$50.00</strong></td>
+							</tr>
+							<tr>
+								<td>Medium</td>
+								<td>10-12 people</td>
+								<td><strong>$60.00</strong></td>
+							</tr>
+							<tr>
+								<td>Large</td>
+								<td>16-20 people</td>
+								<td><strong>$100.00</strong></td>
+							</tr>					
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about">
+		<a id="a_about"></a>
+		<div class="container p-5">
+			<div class="row">
+				<h1 class="display-5 font-sw text-center">About Us </h1>
+				<hr class="my-4">
+				<p class="lead text-center">Special cake shop for all occasions started a year ago by the store owner, Lynda Rice, she wanted to share her love of baking with the world. <br/>Come and taste all the delightful cakes.</p>	
+			</div>
+		</div>
+	</section>
+	<section id="careers">
+		<div class="container p-5">
+			<div class="row">
+				<h1 class="font-sw display-5 text-center">Job Opportunities</h1>
+				<hr class="my-4">
+			</div>
+			<div class="row g-5">
+				<div class="col-md-6">
+					<div class="card text-center">
+						<div class="card-body">
+							<h5 class="card-title display-6 font-sw">Pastry Chef</h5>
+							<hr/>
+							<p class="card-text lead">Specialises in pastry desserts. Must have four years of experience.</p>
+							<p class="card-text lead">Salary: $50,000 p.a.</p> 
+						</div>
+					</div>	
+				</div>	
+				<div class="col-md-6">
+					<div class="card text-center">
+						<div class="card-body">
+							<h5 class="card-title display-6 font-sw">Sales assistant</h5>
+							<hr/>
+							<p class="card-text lead">Serves customers in the shop and operates the cash register.</p>
+							<p class="card-text lead">Salary: $25,000 p.a.</p> 
+						</div>
+					</div>					
+				</div>					
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<div class="container p-5">
+			<div class="row">
+				<h1 class="font-sw display-5 text-center">Contact Us</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<form>
+				      <small id="privacyHelp" class="form-text text-muted">We'll never share your info with anyone else.</small>
+					  <div class="form-group mt-2">
+						<label for="feedbackName">Name</label>
+						<input type="text" class="form-control" id="feedbackName" >
+					  </div>					
+					  <div class="form-group mt-2">
+						<label for="feedbackEmail">Email</label>
+						<input type="email" class="form-control" id="feedbackEmail">
+					  </div>
+					  <div class="form-group mt-2">
+						<label for="feedbackPhone">Phone Number</label>
+						<input type="text" class="form-control" id="feedbackPhone" >
+					  </div>		
+					  <div class="form-group mt-2">
+						<label for="feedbackContent">Your feedback</label>
+						<textarea class="form-control" id="feedbackContent" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-secondary  mt-3">Send feedback</button>						
+					</form>
+				</div>
+				<div class="col-lg-6 py-5">
+					<iframe class="w-100 h-100" id="gmap_canvas" src="https://maps.google.com/maps?q=23%20Pacific%20Hwy%2C%20Sydney%20NSW%20&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="container p-5">
+			<hr class="m-4"/>
+			<p class="text-center">Copyright &copy; 2020 by Special Cakes for All Occasions. All Rights Reserved.</p>
+		</div>
+	</section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+  </body>
+</html>
